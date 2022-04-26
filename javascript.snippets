@@ -1,0 +1,51 @@
+priority 1
+
+snippet rnfc "React Native Functional Component"
+import React from 'react'
+import { View } from 'react-native'
+
+export default function $1(){
+	return(
+		<View>
+			$0
+		</View>
+	)
+}
+endsnippet
+
+snippet useStateSnippet
+const [${1:Name}, set$1] = useState(${0:second})
+endsnippet
+
+snippet imp
+import $0 from '$1'
+endsnippet
+
+snippet import
+import { $0 } from '$1'
+endsnippet
+
+snippet ima
+import { $2 } as $0 from '$1'
+endsnippet
+
+snippet useEffectSnippet
+useEffect(() => {
+	$1
+
+	return () => {
+		$2
+	}
+},[$0])
+endsnippet
+
+snippet styleSheetSnippet
+const style = Stylesheet.create({
+	
+})
+endsnippet
+
+snippet useContextSnippet
+const $1 = useContext($0)
+endsnippet
+
